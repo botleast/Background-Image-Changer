@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Miniblox Custom BG Switcher",
+  "version": "1.0",
+  "description": "Sets a custom background image URL for Miniblox.io.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://miniblox.io/*", "https://blockcraft.online/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

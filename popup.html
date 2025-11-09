@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Background</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            width: 350px;
+            padding: 15px;
+            background-color: #1f2937; /* Dark Grey */
+            color: #f3f4f6;
+        }
+        h2 {
+            font-size: 1.25em;
+            color: #a78bfa; /* Purple Accent */
+            border-bottom: 1px solid #4b5563;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #4b5563;
+            border-radius: 6px;
+            box-sizing: border-box;
+            background-color: #374151;
+            color: #f3f4f6;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        #save-bg-link {
+            background-color: #34d399; /* Green Save */
+            color: #1f2937;
+        }
+        #save-bg-link:hover {
+            background-color: #10b981;
+        }
+        #clear-bg-link {
+            background-color: #f87171; /* Red Clear */
+            color: #1f2937;
+            margin-top: 10px;
+        }
+        #clear-bg-link:hover {
+            background-color: #ef4444;
+        }
+        .message-box {
+            background-color: #4b5563;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="message-box" class="message-box"></div>
+
+    <h2>Miniblox Background Image</h2>
+    <input type="url" id="bg-link-input" placeholder="Paste image link (URL) here...">
+    <button id="save-bg-link">Apply & Reload</button>
+    <button id="clear-bg-link">Clear Background</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
